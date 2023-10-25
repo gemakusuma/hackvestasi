@@ -8,8 +8,9 @@ const transactionSaldoPembelian = 2;
 const vendor = [
     {
         id: 1,
-        name: "",
+        name: "Dana Reksa Investment Management",
         description: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG5_IlgUGsQL4Zqud7W4Bw1_2fVWl8HZnv-SJQBl3IhW4G6aeK083J8sz_mskSaIvS3IU&usqp=CAU",
         riskLevel: riskLevelRendah, // tingkat resiko (rendah, sedang, tinggi)
         growth: 0, // di definisikan 1 tahun trakhir
         allocationAssets: [ // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
@@ -50,6 +51,26 @@ const user = {
     ],
     historyTransaction: [
         {
+            id: 1,
+            total: 5000,
+            vendorId: 1, // ini diambil dari database Vendor -> id
+            date: "2023-01-01"
+        }, {
+            id: 1,
+            total: 5000,
+            vendorId: 1, // ini diambil dari database Vendor -> id
+            date: "2023-01-01"
+        }, {
+            id: 1,
+            total: 5000,
+            vendorId: 1, // ini diambil dari database Vendor -> id
+            date: "2023-01-01"
+        }, {
+            id: 1,
+            total: 5000,
+            vendorId: 1, // ini diambil dari database Vendor -> id
+            date: "2023-01-01"
+        }, {
             id: 1,
             total: 5000,
             vendorId: 1, // ini diambil dari database Vendor -> id
@@ -165,8 +186,27 @@ function transactionCheckout(vendorId, totalTransaction) {
 
 // function ini untuk menampilkan semua history list transaksi yang pernah dibuat
 function listTransaction() {
+    let template = "";
+    for (let data of user.historyTransaction) {
+        template += `<div class="col-lg-3" style="margin-top:20px;">
+            <div class="card card-custom">
+                <div class="card-body" style="border-radius: 5px;">
+                    <div class="card-title">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG5_IlgUGsQL4Zqud7W4Bw1_2fVWl8HZnv-SJQBl3IhW4G6aeK083J8sz_mskSaIvS3IU&usqp=CAU"
+                             class="img-fluid" style="width:100%" alt="">
+                    </div>
+                    <h6 class="card-subtitle mb-2 text-muted">Dana Reksa Investment Management</h6>
+                    <p class="card-text">Total Berinvestasi : <br><b>Rp 50.000.000</b></p>
+                    <a href="#" class="card-link">Detail Portofolio</a>
+                </div>
+            </div>
+        </div>`;
+    }
 
+    document.getElementById("portofolio").innerHTML = template;
+    return template;
 }
+listTransaction()
 
 
 
