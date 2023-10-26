@@ -412,12 +412,12 @@ function detailVendor(vendorId) {
 <!--                                 aria-valuemin="0" aria-valuemax="100"></div>-->
                         </div>
                         <div class="row">
-                            <div class="col-lg-6 " id="detailKiriAllocationAsset">
+                            <div class="col-lg-6 col-md-3 col-sm-3" id="detailKiriAllocationAsset">
 <!--                                <div class="obligasi-pemerintah" style="">Obligasi Pemerintah</div>-->
 <!--                                <div class="obligasi-korporasi" style="">Obligasi Korporasi</div>-->
 <!--                                <div class="pasar-uang" style="">Pasar Uang</div>-->
                             </div>
-                            <div class="col-lg-6" style="text-align:right;" id="detailKananAllocationAsset">
+                            <div class="col-lg-6 col-md-3 col-sm-3" style="text-align:right;" id="detailKananAllocationAsset">
 <!--                                <div class="obligasi-pemerintah">8.52%</div>-->
 <!--                                <div class="obligasi-korporasi">58.62%</div>-->
 <!--                                <div class="pasar-uang">32.86%</div>-->
@@ -432,7 +432,7 @@ function detailVendor(vendorId) {
                             <div class="col-sm-12">
                                 <button type="submit" class="btn btn-primary floatRight"
                                         onclick="transactionCheckout(${vendorId})">
-                                    Pemabayaran
+                                    Pembayaran
                                 </button>
                             </div>
                         </div>
