@@ -15,9 +15,9 @@ const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Jul
 
 const vendor = [
     {
-        id: 555,
+        id: 1,
         name: "Dana Reksa Investment Management",
-        description: `Reksa Dana Dana Reksa Investment Management adalah Reksa Dana berbentuk Kontrak Investasi
+        description: `Dana Reksa Investment Management adalah Reksa Dana berbentuk Kontrak Investasi
                             Kolektif
                             berdasarkan Undang-Undang tentang Pasar Modal beserta peraturan pelaksanaannya.
                             <br><br>
@@ -52,83 +52,248 @@ const vendor = [
         },
     },
     {
-        id: 777,
+        id: 2,
         name: "Mirae Assets Management",
         image: "https://rec-data.kalibrr.com/www.kalibrr.com/logos/GF54H9ZS6QN3T5BEAW28D7ZW7RAHGN4FA7U8QK8K-5fdb0fee.png",
-        description: "",
-        riskLevel: riskLevelSedang, // tingkat resiko (rendah, sedang, tinggi)
-        growth: 10, // di definisikan 1 tahun trakhir
+        description: `Reksa Dana Mirae Assets Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan
+Undang-Undang No.8 tahun 1995 tentang Pasar Modal dan peraturan pelaksanaannya.
+<br><br>
+Mirae Assets Management bertujuan untuk mempertahankan nilai investasi awal dan menghasilkan tingkat pengembalian yang stabil dan
+optimal melalui investasi pada Instrumen Pasar Uang dan atau Efek Bersifat Utang yang diterbitkan oleh pemerintah Republik
+Indonesia dan korporasi yang berdomisili di Indonesia yang jatuh temponya kurang dari 1 (satu) tahun.`,
+        riskLevel: riskLevelTinggi, // tingkat resiko (rendah, sedang, tinggi)
+        growth: -3, // di definisikan 1 tahun trakhir
         allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
-            "Obligasi Pemerintah": 50,
-            "Obligasi Korporasi": 0,
-            "Pasar Uang": 50,
+            "Obligasi Pemerintah": 0,
+            "Obligasi Korporasi": 30,
+            "Pasar Uang": 70,
         },
     },
     {
         id: 3,
         name: "Kresna Assets Management",
         image: "https://media.bareksa.com/cms/media/assets/image/2020/08/15976_76607c007abb80d3a891dfa3622ea0b6.jpg",
-        description: "",
+        description: `
+        Reksa Dana Kresna Assets Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif
+berdasarkan Undang-Undang tentang Pasar Modal beserta peraturan pelaksanaannya.
+<br><br>
+Kresna Assets Management akan menginvestasikan dananya dengan komposisi investasi sebesar
+100% (seratus persen) pada instrumen pasar uang dan/atau setara kas dan/atau efek bersifat hutang
+dengan jatuh tempo tidak lebih dari 1 (satu) tahun dan/atau sisa jatuh temponya tidak lebih dari 1 (satu)
+tahun meliputi obligasi dan surat hutang lainnya yang mempunyai jatuh tempo tidak lebih dari 1 (satu) tahun
+dan/atau sisa jatuh temponya tidak lebih dari 1 (satu) tahun, yang diterbitkan berdasarkan peraturan
+perundang-undangan yang berlaku di Indonesia. 
+`,
         riskLevel: riskLevelSedang, // tingkat resiko (rendah, sedang, tinggi)
-        growth: -5, // di definisikan 1 tahun trakhir
+        growth: 7, // di definisikan 1 tahun trakhir
         allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
-            "Obligasi Pemerintah": 20,
-            "Obligasi Korporasi": 20,
-            "Pasar Uang": 60,
+            "Obligasi Pemerintah": 40,
+            "Obligasi Korporasi": 30,
+            "Pasar Uang": 30,
         },
     },
     {
         id: 4,
         name: "Capital Assets Management",
         image: "https://amii.s3.amazonaws.com/uploads/member/image2/602/capital.png",
-        description: "",
-        riskLevel: riskLevelSedang, // tingkat resiko (rendah, sedang, tinggi)
-        growth: 10, // di definisikan 1 tahun trakhir
+        description: `
+        Capital Assets Management bertujuan untuk mendapatkan peningkatan investasi yang tinggi dalam jangka panjang.
+        <br><br>
+Capital Assets Management akan berinvestasi dengan komposisi portofolio investasi minimum 80% (delapan puluh persen) dan maksimum 100%
+(seratus persen) pada Efek bersifat ekuitas yang diterbitkan melalui Penawaran Umum dan/atau dicatatkan di Bursa Efek baik di dalam maupun di
+luar negeri.
+<br><br>
+serta minimum 0% (nol persen) dan maksimum 20% (dua puluh persen) pada Efek bersifat utang yang diterbitkan melalui Penawaran
+Umum dan/atau dicatatkan di Bursa Efek baik di dalam maupun di luar negeri (Efek bersifat utang tersebut termasuk dalam 20% (dua puluh persen)
+instrumen pasar uang yang mempunyai jatuh tempo kurang dari 1 (satu) tahun dan diterbitkan berdasarkan peraturan perundang-undangan yang
+berlaku di Indonesia.`,
+        riskLevel: riskLevelRendah, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 4, // di definisikan 1 tahun trakhir
         allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
             "Obligasi Pemerintah": 50,
             "Obligasi Korporasi": 40,
             "Pasar Uang": 10,
         },
     },
+    {
+        id: 5,
+        name: "",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM03X4DquFHUCok7SD4RzyVT9qGKiKmW6srw&usqp=CAU",
+        description: `Reksa Dana Panin Assets Management (selanjutnya disebut "Panin Assets Management") adalah Reksa Dana berbentuk Kontrak Investasi
+Kolektif (“KIK”) berdasarkan Undang-Undang No.8 tahun 1995 tentang Pasar Modal (“Undang-Undang Pasar Modal”) beserta peraturan
+pelaksanaannya.
+<br><br>
+Panin Assets Management mempunyai tujuan untuk menghasilkan peningkatan modal dengan berinvestasi pada saham-saham dari
+perusahaan-perusahaan yang bergerak dalam sektor-sektor yang memiliki posisi yang baik di bursa dengan memanfaatkan peluang-peluang yang
+ada pada perekonomian Indonesia dan global, serta memberikan kinerja investasi jangka panjang yang optimal.`,
+        riskLevel: riskLevelRendah, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 4, // di definisikan 1 tahun trakhir
+        allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
+            "Obligasi Pemerintah": 50,
+            "Obligasi Korporasi": 40,
+            "Pasar Uang": 10,
+        },
+    },
+
+    {
+        id: 6,
+        name: "BNI Asset Management",
+        image: "https://www.bni-am.co.id/uploads/topics/16802816627765.jpg",
+        description: `
+        BNI Asset Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif (“KIK”) berdasarkan Undang-Undang No.8 tahun 1995 tentang Pasar Modal
+(“Undang-Undang Pasar Modal”) beserta peraturan pelaksanaannya.
+<br><br>
+Tujuan investasi BNI Asset Management adalah untuk menghasilkan peningkatan modal dengan berinvestasi
+pada saham-saham sesuai prinsip-prinsip Syariah di Pasar Modal dari perusahaan-perusahaan yang bergerak dalam sektor-sektor
+yang memiliki posisi yang baik di bursa dengan memanfaatkan peluang-peluang yang ada pada perekonomian Indonesia dan global,
+serta memberikan kinerja investasi jangka panjang yang optimal`,
+        riskLevel: riskLevelSedang, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 9, // di definisikan 1 tahun trakhir
+        allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
+            "Obligasi Pemerintah": 40,
+            "Obligasi Korporasi": 40,
+            "Pasar Uang": 20,
+        },
+    },
+    {
+        id: 7,
+        name: "Trimegah Asset Management",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYmZ0H_smAJP4Y4PM_ossij3mXGdMlt4IWg&usqp=CAU",
+        description: `
+        Trimegah Asset Management adalah Reksa Dana
+berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang No. 8 tahun 1995 tentang Pasar Modal.
+SUCORINVEST MAXI FUND bertujuan untuk memberikan apresiasi modal dan tingkat keuntungan yang optimal dalam
+jangka panjang dengan cara mengkapitalisasi pasar modal Indonesia.
+<br><br>
+Trimegah Asset Management akan melakukan investasi dengan komposisi portofolio investasi minimum 80% (delapan puluh
+persen) dan maksimum 100% (seratus persen) dari Nilai Aktiva Bersih pada Efek bersifat ekuitas yang diterbitkan oleh
+korporasi yang dijual dalam Penawaran Umum dan/atau diperdagangkan di Bursa Efek Indonesia; minimum 0% (nol persen)
+dan maksimum 20% (dua puluh persen) dari Nilai Aktiva Bersih pada instrumen pasar uang dalam negeri yang mempunyai
+jatuh tempo kurang dari 1(satu) tahun dan/atau deposito; sesuai dengan peraturan perundang-undangan yang berlaku di
+Indonesia. 
+<br><br>
+Manajer Investasi akan selalu menyesuaikan kebijakan investasi tersebut diatas dengan Peraturan OJK yang
+berlaku dan kebijakan-kebijakan yang dikeluarkan oleh OJK
+`,
+        riskLevel: riskLevelRendah, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 6, // di definisikan 1 tahun trakhir
+        allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
+            "Obligasi Pemerintah": 50,
+            "Obligasi Korporasi": 40,
+            "Pasar Uang": 10,
+        },
+    },
+    {
+        id: 8,
+        name: "Majoris Asset Management",
+        image: "https://images.bisnis.com/posts/2018/01/29/731633/majorisam.jpg",
+        description: `
+        REKSA DANA Majoris Asset Management adalah Reksa Dana Berbentuk Kontrak Investasi
+Kolektif berdasarkan Undang-Undang Nomor 8 tahun 1995 tentang Pasar Modal beserta peraturan
+pelaksanaannya.
+<br><br>
+REKSA DANA Majoris Asset Management bertujuan untuk memberikan hasil investasi yang
+setara dengan kinerja Indeks FTSE Indonesia ESG yang diterbitkan oleh FTSE Russell.
+`,
+        riskLevel: riskLevelRendah, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 2, // di definisikan 1 tahun trakhir
+        allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
+            "Obligasi Pemerintah": 50,
+            "Obligasi Korporasi": 40,
+            "Pasar Uang": 10,
+        },
+    },
+    {
+        id: 9,
+        name: "Aberdeen",
+        image: "https://storage.googleapis.com/finansialku_media/wordpress_media/2021/01/5d5d0256-aberdeen-standard-bakal-tutup-produk-reksa-dana-dibubarkan-01.jpg",
+        description: ``,
+        riskLevel: riskLevelRendah, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 2, // di definisikan 1 tahun trakhir
+        allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
+            "Obligasi Pemerintah": 40,
+            "Obligasi Korporasi": 50,
+            "Pasar Uang": 10,
+        },
+    },
+    {
+        id: 10,
+        name: "EMCO Asset Management",
+        image: "https://financial.sinarmassekuritas.co.id/download/daily_news/KONTAN13650.jpg",
+        description: `
+        Reksa Dana EMCO Asset Management adalah Reksa Dana berbentuk Kontrak Investasi Kolektif berdasarkan
+Undang-Undang tentang Pasar Modal beserta peraturan pelaksanaannya.
+<br><br>
+Reksa Dana EMCO Asset Management (selanjutnya disebut “EMCO Asset Management“) bertujuan mendapatkan
+kenaikan modal dalam jangka panjang dengan berinvestasi pada saham perusahaan berkapitalisasi pasar besar
+yang terdaftar di Bursa Efek Indonesia. 
+`,
+        riskLevel: riskLevelTinggi, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 17, // di definisikan 1 tahun trakhir
+        allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
+            "Obligasi Pemerintah": 5,
+            "Obligasi Korporasi": 5,
+            "Pasar Uang": 90,
+        },
+    },
+    {
+        id: 11,
+        name: "Maybank Asset",
+        image: "https://bernama.com/storage/photos/342992ba806463439758c256ade3d6cd5e9d32748d133",
+        description: `REKSA DANA Maybank Asset Management adalah Reksa
+Dana berbentuk Kontrak Investasi Kolektif berdasarkan Undang-Undang No. 8 tahun 1995 tentang Pasar Modal
+beserta peraturan pelaksanaannya.
+<br><br>
+Maybank Asset Management bertujuan untuk memperoleh peningkatan nilai investasi yang maksimal berupa
+capital gain dan dividen melalui investasi pada Efek bersifat ekuitas.`,
+        riskLevel: riskLevelRendah, // tingkat resiko (rendah, sedang, tinggi)
+        growth: 7, // di definisikan 1 tahun trakhir
+        allocationAssets: { // alokasi asset yang dilakukan vendor berapa persen (harus 100%)
+            "Obligasi Pemerintah": 50,
+            "Obligasi Korporasi": 40,
+            "Pasar Uang": 10,
+        },
+    },
+
 ];
 
 const user = {
     name: "",
-    saldo: 19_000_500,
+    saldo: 0,
     categoryType: riskLevelRendah,
     historySaldo: [
-        {
-            id: 1,
-            transactionType: transactionSaldoDeposit,
-            total: 10_000_000,
-            date: "25-01-2023"
-        },
-        {
-            id: 2,
-            transactionType: transactionSaldoPembelian,
-            total: 7_000_000,
-            date: "17-08-2023"
-        },
+        // {
+        //     id: 1,
+        //     transactionType: transactionSaldoDeposit,
+        //     total: 10_000_000,
+        //     date: "25-01-2023"
+        // },
+        // {
+        //     id: 2,
+        //     transactionType: transactionSaldoPembelian,
+        //     total: 7_000_000,
+        //     date: "17-08-2023"
+        // },
     ],
     historyTransaction: [
-        {
-            id: 90,
-            total: 5000,
-            vendorId: 555, // ini diambil dari database Vendor -> id
-            date: "10-10-2023"
-        },
-        {
-            id: 91,
-            total: 5000,
-            vendorId: 777, // ini diambil dari database Vendor -> id
-            date: "10-10-2023"
-        },
-        {
-            id: 92,
-            total: 20000,
-            vendorId: 777, // ini diambil dari database Vendor -> id
-            date: "10-10-2023"
-        },
+        // {
+        //     id: 90,
+        //     total: 5000,
+        //     vendorId: 1, // ini diambil dari database Vendor -> id
+        //     date: "10-10-2023"
+        // },
+        // {
+        //     id: 91,
+        //     total: 5000,
+        //     vendorId: 2, // ini diambil dari database Vendor -> id
+        //     date: "10-10-2023"
+        // },
+        // {
+        //     id: 92,
+        //     total: 20000,
+        //     vendorId: 3, // ini diambil dari database Vendor -> id
+        //     date: "10-10-2023"
+        // },
     ],
 };
 
@@ -139,7 +304,16 @@ function listVendor() {
             <h3>List Vendor</h3>
         </div>`;
 
+
     for (let data of vendor) {
+        let riskLevel = "";
+        if (data.riskLevel === riskLevelRendah) {
+            riskLevel = "Rendah";
+        } else if (data.riskLevel === riskLevelSedang) {
+            riskLevel = "Sedang";
+        } else if (data.riskLevel === riskLevelTinggi) {
+            riskLevel = "Tinggi";
+        }
         let styleGrowth = "green"
         if (data.growth < 0) {
             styleGrowth = "red";
@@ -152,6 +326,7 @@ function listVendor() {
                              class="img-fluid" style="width:100%" alt="">
                     </div>
                     <h6 class="card-subtitle mb-2 text-muted">${data.name}</h6>
+                    <p class="card-text">Kategori Resiko : ${riskLevel}</p class="card-text">
                     <p class="card-text">Return Investasi : <br><b class="growth-text-${styleGrowth}">${data.growth}%</b></p>
 <!--                    <span style="font-size:11px;">(Eqv. 18.00% p.a)</span>-->
                     <button class="btn btn-secondary col-lg-12" onclick="redirectToDetailVendor(${data.id})">Detail Reksadana</button>
@@ -205,6 +380,14 @@ function detailVendor(vendorId) {
                                  aria-valuemin="0" aria-valuemax="100"></div>`;
         }
     }
+    let riskLevel = "";
+    if (result.riskLevel === riskLevelRendah) {
+        riskLevel = "Rendah";
+    } else if (result.riskLevel === riskLevelSedang) {
+        riskLevel = "Sedang";
+    } else if (result.riskLevel === riskLevelTinggi) {
+        riskLevel = "Tinggi";
+    }
 
     document.getElementById("detail-vendor").innerHTML = `
     
@@ -216,6 +399,7 @@ function detailVendor(vendorId) {
                         <p class="">
                             ${result.description}
                         </p>
+                        <p class="card-text">Tingkat Resiko: <b>${riskLevel}</b></p>
                         <p class="card-text">Return Investasi: <br><b class="growth-text-${styleGrowth}">${result.growth}%</b></p>
                         
                         <div class="progress" id="progressBar">
@@ -522,7 +706,7 @@ function listTransaction() {
           <div class="col-lg-7">
                   <img src="${vendorTransation.image}" style="margin-left: 15px;">
               <div class="side-bar-history-text">
-                  <p style="font-size: 15px;"> <b>Dana Reksa Investment Management</b></p>
+                  <p style="font-size: 15px;"> <b>${vendorTransation.name}</b></p>
                   <p style="color:${styleGrowth}">Return Investasi : ${vendorTransation.growth}%</p>
                   <p>Jumlah Investasi : ${currencyFormat.format(data.total)}</p>
                   <p>Tanggal Pembelian : ${formatDate(data.date)}</p>
