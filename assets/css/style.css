@@ -70,3 +70,26 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+    .side-bar-history img {
+        float: none;
+    }
+
+
+    .side-right {
+        padding-top: 25px;
+        padding-left: 15px;
+    }
+
+
+    .side-bar-history-text p {
+        padding-left: 15px;
+    }
+
+    .side-right-bottom {
+        padding-left: 15px;
+    }
+
+}
+
+
