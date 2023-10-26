@@ -90,6 +90,10 @@
         padding-left: 15px;
     }
 
+    #detailKiriAllocationAsset {
+        float: left;
+        position: absolute;
+    }
 }
 
 
