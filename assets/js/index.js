@@ -432,7 +432,7 @@ function detailVendor(vendorId) {
                             <div class="col-sm-12">
                                 <button type="submit" class="btn btn-primary floatRight"
                                         onclick="transactionCheckout(${vendorId})">
-                                    Deposit
+                                    Pemabayaran
                                 </button>
                             </div>
                         </div>
@@ -703,7 +703,7 @@ function listTransaction() {
 
         template += `<div class="riwayat">
         <div class="side-bar-history row">
-          <div class="col-lg-7">
+          <div class="col-lg-7 col-md-12 col-sm-12">
                   <img src="${vendorTransation.image}" style="margin-left: 15px;">
               <div class="side-bar-history-text">
                   <p style="font-size: 15px;"> <b>${vendorTransation.name}</b></p>
@@ -712,9 +712,9 @@ function listTransaction() {
                   <p>Tanggal Pembelian : ${formatDate(data.date)}</p>
               </div>
           </div>
-          <div class="col-lg-5" >
+          <div class="col-lg-5 col-md-12 col-sm-12" >
               <p class="side-right">Risk Level : ${riskLevel}</p>
-              <p style="font-size: 13px;">Status : Pembelian Berhasil</p>
+              <p class="side-right-bottom" style="font-size: 13px;">Status : Pembelian Berhasil</p>
           </div>
           </div>
         </div>`;
